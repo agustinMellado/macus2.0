@@ -3,22 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './modules/auth/pages/login/login.component';
-import { RegistroComponent } from './modules/auth/pages/registro/registro.component';
-import { HomePageComponent } from './modules/home/pages/home-page/home-page.component';
+import { RuletaModule } from './modules/ruleta/ruleta.module';
+import { HomeModule } from './modules/home/home.module';
+import{AuthModule} from './modules/auth/auth.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegistroComponent,
-    HomePageComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    HomeModule,
+    RuletaModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
