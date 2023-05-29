@@ -1,0 +1,123 @@
+{
+"preguntas":[{
+        "id":1,
+        "pregunta":"¿Qué son los órganos sexuales externos femeninos?",
+        "categoria":"partes del cuerpo",
+        "respuesta":[
+            {
+                "id":1,
+                "respuesta":"El pene y los testículos",
+                "correcta": false
+            },
+            {
+                "id":2,
+                "respuesta":"El clitoris y los labios vaginales",
+                "correcta": true
+
+            },
+            {
+                "id":3,
+                "respuesta":"La vagina y el utero",
+                "correcta":false
+            }
+
+        ]
+    },{
+        "preguntas":{
+        "id":2,
+        "pregunta":"Qué son los órganos sexuales externos masculinos?",
+        "categoria":"partes del cuerpo",
+        "respuesta":[
+            {
+                "id":1,
+                "respuesta":"La vagina y el útero",
+                "correcta": false
+            },
+            {
+                "id":2,
+                "respuesta":"El clítoris y los labios vaginale",
+                "correcta": false
+
+            },
+            {
+                "id":3,
+                "respuesta":"El pene y los testiculos",
+                "correcta":true
+            }
+        ]
+        }
+    },{
+        "preguntas":{
+        "id":3,
+        "pregunta":"¿Cuál de estas opciones es una parte del cuerpo que debemos proteger del sol usando protector solar y ropa adecuada?",
+        "categoria":"cuidado personal",
+        "respuesta":[
+            {
+                "id":1,
+                "respuesta":"Piel",
+                "correcta": true
+            },
+            {
+                "id":2,
+                "respuesta":"Rodillas",
+                "correcta": false
+
+            },
+            {
+                "id":3,
+                "respuesta":"Uñas",
+                "correcta":false
+            }
+        ]
+        }
+    },{
+        "preguntas":{
+        "id":4,
+        "pregunta":"¿Cuál de estas opciones es una parte del cuerpo que debemos cuidar y mantener limpia para prevenir infecciones y enfermedades?",
+        "categoria":"cuidado personal",
+        "respuesta":[
+            {
+                "id":1,
+                "respuesta":"Rodillas",
+                "correcta": false
+            },
+            {
+                "id":2,
+                "respuesta":"genitales",
+                "correcta": true
+
+            },
+            {
+                "id":3,
+                "respuesta":"Uñas",
+                "correcta":false
+            }
+        ]
+        }
+    },{
+        "preguntas":{
+        "id":5,
+        "pregunta":"¿Qué podemos hacer si cometemos un error con un amigo/a?",
+        "categoria":"amistad y respeto",
+        "respuesta":[
+            {
+                "id":1,
+                "respuesta":"Pedir disculpas y tratar de arreglarlo",
+                "correcta": true
+            },
+            {
+                "id":2,
+                "respuesta":"Ignorar el error y esperar que se olvide",
+                "correcta": false
+
+            },
+            {
+                "id":3,
+                "respuesta":"Culpar al amigo/a por el error",
+                "correcta":false
+            }
+        ]
+        }
+    }
+]
+}
