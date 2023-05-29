@@ -21,7 +21,8 @@
     "bootstrap": "^5.3.0-alpha3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.13.0",
+    "backend":"json-server --watch ./src/app/modules/ruleta/fakebackend/db.json"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.2",
