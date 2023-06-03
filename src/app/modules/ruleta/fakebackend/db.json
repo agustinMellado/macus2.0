@@ -23,7 +23,6 @@
 
         ]
     },{
-        "preguntas":{
         "id":2,
         "pregunta":"Qué son los órganos sexuales externos masculinos?",
         "categoria":"partes del cuerpo",
@@ -45,9 +44,8 @@
                 "correcta":true
             }
         ]
-        }
+        
     },{
-        "preguntas":{
         "id":3,
         "pregunta":"¿Cuál de estas opciones es una parte del cuerpo que debemos proteger del sol usando protector solar y ropa adecuada?",
         "categoria":"cuidado personal",
@@ -69,9 +67,8 @@
                 "correcta":false
             }
         ]
-        }
+        
     },{
-        "preguntas":{
         "id":4,
         "pregunta":"¿Cuál de estas opciones es una parte del cuerpo que debemos cuidar y mantener limpia para prevenir infecciones y enfermedades?",
         "categoria":"cuidado personal",
@@ -93,9 +90,8 @@
                 "correcta":false
             }
         ]
-        }
+        
     },{
-        "preguntas":{
         "id":5,
         "pregunta":"¿Qué podemos hacer si cometemos un error con un amigo/a?",
         "categoria":"amistad y respeto",
@@ -117,7 +113,7 @@
                 "correcta":false
             }
         ]
-        }
+        
     }
 ]
 }
