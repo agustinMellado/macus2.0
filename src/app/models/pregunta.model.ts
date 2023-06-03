@@ -1,4 +1,4 @@
-export interface pregrunta{
+export interface Pregrunta{
     id:string;
     pregunta:string;
     categoria:string;
