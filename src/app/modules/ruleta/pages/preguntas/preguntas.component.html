@@ -3,9 +3,10 @@
   <h1>{{ pregunta[numeroAleatorio].pregunta }}</h1>
 
   <div class="preguntas d-flex flex-column mt-4" >
-    <button type="button" class="p-2 btn btn-primary ">{{ pregunta[numeroAleatorio].respuesta[0].respuesta }}</button>
-    <button type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[0].respuesta[1].respuesta }}</button>
-    <button type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[0].respuesta[2].respuesta }}</button>
+    <button (click)="btnCorrecto()" type="button" class="p-2 btn btn-primary">{{ pregunta[numeroAleatorio].respuesta[0].respuesta }}</button>
+    <button (click)="btnIncorrecto()" type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[numeroAleatorio].respuesta[1].respuesta }}</button>
+    <button type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[numeroAleatorio].respuesta[2].respuesta }}</button>
   </div>
   <h1>{{numeroAleatorio}}</h1>
+ 
 </div>
