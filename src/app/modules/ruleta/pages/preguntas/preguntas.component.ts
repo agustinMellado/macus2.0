@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 //importacion de modelo y servicio
 import { Pregunta } from 'src/app/models/pregunta.model';
 import { PreguntasService } from '../../services/preguntas.service';
-
 @Component({
   selector: 'app-preguntas',
   templateUrl: './preguntas.component.html',
