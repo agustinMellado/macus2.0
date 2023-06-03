@@ -1,4 +1,4 @@
-export interface Pregrunta{
+export interface Pregunta{
     id:string;
     pregunta:string;
     categoria:string;
