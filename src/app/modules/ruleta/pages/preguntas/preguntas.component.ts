@@ -27,14 +27,29 @@ export class PreguntasComponent {
     return Math.floor(min+ Math.random() *  max)
   }
 
-  btnCorrecto(){
-    this.SweetAlert.respuestaCorrecta()
+
+
+  btnRespuesta(respuesta:boolean){
+
+    if(respuesta){
+
+      this.SweetAlert.respuestaCorrecta()
+
+    }else{
+      this.SweetAlert.respuestaIncorrecta()
+    }
   }
 
 
-  btnIncorrecto(){
-    this.SweetAlert.respuestaIncorrecta
-  }
+  
+  // btnCorrecto(){
+  //   this.SweetAlert.respuestaCorrecta()
+  // }
+
+
+  // btnIncorrecto(){
+  //   this.SweetAlert.respuestaIncorrecta()
+  // }
 
 
 }
