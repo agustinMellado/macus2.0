@@ -8,12 +8,12 @@ import { Pregunta } from 'src/app/models/pregunta.model';
 })
 export class PreguntasService {
   //declaracion de variable que hace referencia a la Api
-  private apiUrl= 'https://localhost:3000/preguntas'
+  private apiUrl= 'http://localhost:3000/preguntas'
   constructor(private http: HttpClient) {}
 
 
   //metodo para obtener preguntas
   getPreguntas():Observable<Pregunta[]>{
-    return this.http.get<Pregunta[]>(this.apiUrl);
+    return this.http.get<Pregunta[]>(this.apiUrl)
   }
 }
