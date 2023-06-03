@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pregrunta } from 'src/app/models/pregunta.model';
 
 @Component({
   selector: 'app-preguntas',
