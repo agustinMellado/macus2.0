@@ -4,6 +4,7 @@ import { Component, Inject } from '@angular/core';
 import { Pregunta } from 'src/app/models/pregunta.model';
 import { PreguntasService } from '../../services/preguntas.service';
 import { SweetAlertService } from 'src/app/shared/services/sweet-alert.service';
+import { Subject } from 'rxjs';
 @Component({
   selector: 'app-preguntas',
   templateUrl: './preguntas.component.html',
@@ -13,7 +14,9 @@ export class PreguntasComponent {
   //Declaracion de variables
   pregunta: Pregunta[] = [];
   numeroAleatorio = this.generarNumeroAleatorio(0, 4);
-
+  loadingController: any;
+ // contador=0;
+  
 
   constructor(private preguntaService: PreguntasService, private SweetAlert: SweetAlertService) {}
   ngOnInit() {
@@ -22,6 +25,7 @@ export class PreguntasComponent {
       .getPreguntas()
       .subscribe((pregunta) => (this.pregunta = pregunta));
   }
+
   //funcion para generar un numero aleatorio
   generarNumeroAleatorio(min: number, max: number): number {
     return Math.floor(min+ Math.random() *  max)
@@ -34,7 +38,8 @@ export class PreguntasComponent {
     if(respuesta){
 
       this.SweetAlert.respuestaCorrecta()
-
+     // this.contador++
+    
     }else{
       this.SweetAlert.respuestaIncorrecta()
     }
