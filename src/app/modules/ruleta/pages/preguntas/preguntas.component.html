@@ -1,1 +1,12 @@
-<p>preguntas works!</p>
+<app-navbar></app-navbar>
+<div class="contenedor" >
+  <h1 >{{ pregunta[numeroAleatorio].pregunta }}</h1>
+
+  <div class="preguntas d-flex flex-column mt-4" >
+    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[0].correcta)" type="button" class="p-2 btn btn-primary">{{ pregunta[numeroAleatorio].respuesta[0].respuesta }}</button>
+    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[1].correcta)" type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[numeroAleatorio].respuesta[1].respuesta }}</button>
+    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[2].correcta)" type="button" class="p-2 btn btn-primary mt-2">{{ pregunta[numeroAleatorio].respuesta[2].respuesta }}</button>
+  </div>
+  <!-- <h1>respuestas correctas: {{contador}}</h1> -->
+
+</div>
