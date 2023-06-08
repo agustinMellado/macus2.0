@@ -6,25 +6,28 @@
             <div class="card-body p-5 text-center" >
               <div>
                 <img src="/assets/imagenes/logoMacus.jpg" width="200px" height="200px" alt="" >
-              </div>          
-  
+              </div>       
+
+              <form [formGroup]="formularioLogin">
               <div class="form-outline mb-4">
-                <input type="email" id="email" class="form-control form-control-lg" />
+                <input type="email" id="email" formControlName='email'  class="form-control form-control-lg" />
                 <label class="form-label" for="typeEmailX-2">Correo</label>
               </div>
   
               <div class="form-outline mb-4">
-                <input type="password" id="password" class="form-control form-control-lg" />
+                <input type="password" id="password" formControlName='password'  class="form-control form-control-lg" />
                 <label class="form-label" for="typePasswordX-2">Contraseña</label>
               </div>
-  
+            </form>
+              
               <!-- Checkbox -->
               <div class="form-check d-flex justify-content-start mb-4">
                 <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
                 <label class="form-check-label" for="form1Example3">  Recordar contraseña</label>
               </div>
   
-              <button class="btn btn-personal btn-lg btn-block" type="submit" routerLink="/registro">Registrar</button>
+              <!--BOTON REGISTRO-->
+              <button class="btn btn-personal btn-lg btn-block" type="submit" routerLink="/registro" (click)="iniciarSesion()" >Registrar</button>
   
               <hr class="my-4">
   
