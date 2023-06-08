@@ -15,24 +15,29 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RuletaModule } from './modules/ruleta/ruleta.module';
 import { HomeModule } from './modules/home/home.module';
 import{AuthModule} from './modules/auth/auth.module';
-
 //importacion para poder hacer uso de las peticiones y consumir jsonserver
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    ReactiveFormsModule, //agrego para bd
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     AuthModule,
     HomeModule,
     RuletaModule,
     HttpClientModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),

@@ -1,1 +1,54 @@
-<p>registro works!</p>
+<section class="vh-100" style="background-color: #EAB9B9;">
+    <div class="container py-5 h-100" class="lila-color">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+                
+              <div>
+                <img src="/assets/imagenes/logoMacus.jpg" width="200px" height="200px" alt="">
+              </div>          
+  
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typeEmailX-2">Nombre</label>
+                <input type="email" id="email" class="form-control form-control-lg" />
+                
+              </div>
+
+              <div>
+                <label class="form-label" for="typeEmailX-2">Genero</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Binario</option>
+                  </select>
+              </div>
+              <br>
+
+              <div>
+                <label class="form-label" for="typeEmailX-2">Edad</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="2 a 5 años">1</option>
+                    <option value="6 a 12 años ">2</option>
+                    <option value="12 a 18 años">3</option>
+                  </select>
+              </div>
+  
+              <br>
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-start mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                <label class="form-check-label" for="form1Example3">  Recordar contraseña</label>
+              </div>
+  
+              <button class="btn btn-personal btn-lg btn-block" type="submit" routerLink="/home" >Crear usuario</button>
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
