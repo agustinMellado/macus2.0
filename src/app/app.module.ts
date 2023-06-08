@@ -3,12 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
-
-import { LoginComponent } from './modules/auth/pages/login/login.component';
-import { RegistroComponent } from './modules/auth/pages/registro/registro.component';
-import { HomePageComponent } from './modules/home/pages/home-page/home-page.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
@@ -25,15 +19,12 @@ import{AuthModule} from './modules/auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
-    ReactiveFormsModule, //agrego para bd
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+ 
     AuthModule,
     HomeModule,
     RuletaModule,

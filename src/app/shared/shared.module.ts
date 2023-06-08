@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RecargaDirective } from './directives/recarga.directive';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import { RecargaDirective } from './directives/recarga.directive';
   ],
   imports: [
     CommonModule,
+    
   ]
 })
 export class SharedModule { }
