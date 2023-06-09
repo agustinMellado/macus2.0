@@ -10,6 +10,7 @@
       (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[0].correcta)"
       type="button"
       class="p-2 btn btnPregunta mt-4"
+      routerLink="/home"
     >
       {{ pregunta[numeroAleatorio].respuesta[0].respuesta }}
     </button>
@@ -17,6 +18,7 @@
       (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[1].correcta)"
       type="button"
       class="p-2 btn btnPregunta mt-2"
+      routerLink="/home"
     >
       {{ pregunta[numeroAleatorio].respuesta[1].respuesta }}
     </button>
@@ -24,6 +26,7 @@
       (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[2].correcta)"
       type="button"
       class="p-2 btn btnPregunta mt-2"
+      routerLink="/home"
     >
       {{ pregunta[numeroAleatorio].respuesta[2].respuesta }}
     </button>
