@@ -46,7 +46,7 @@ formularioRegistrar: FormGroup;
         alert("Registro realizado, iniciando sesion.."); //(resp) el navegador tira object Object pero toma al usuario cargado en firebase
         this.router.navigateByUrl('home'); //si los datos comprobados son correctos ahi podes navegar
       }).catch((error) =>{
-        alert("Datos Incorrectos, verifique que el usuario exista") //(error) el navegador te escribe que error tiene
+        alert("La contraseña debe tener por lo menos 6 caracteres") //(error) el navegador te escribe que error tiene
       })
 
     }
