@@ -9,6 +9,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { provideFirebaseApp } from '@angular/fire/app';
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -21,6 +22,7 @@ import { environment } from 'src/environments/environment';
   imports: [
     CommonModule,
     FormsModule,
+    AppRoutingModule ,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     ReactiveFormsModule, //agrego para bd
