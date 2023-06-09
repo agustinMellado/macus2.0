@@ -7,6 +7,7 @@ import { HomePageComponent } from './modules/home/pages/home-page/home-page.comp
 import { PreguntasComponent } from './modules/ruleta/pages/preguntas/preguntas.component';
 //rutas
 const routes: Routes = [
+  {path:'', component: LoginComponent},
     {path:'login', component: LoginComponent},
   {path:'registro', component: RegistroComponent},
   {path:'home', component: HomePageComponent},
