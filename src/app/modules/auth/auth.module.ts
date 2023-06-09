@@ -10,6 +10,7 @@ import { provideFirebaseApp } from '@angular/fire/app';
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -21,6 +22,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     FormsModule,
     AppRoutingModule ,
     AngularFireModule.initializeApp(environment.firebaseConfig),
