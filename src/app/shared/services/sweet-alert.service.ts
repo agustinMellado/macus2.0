@@ -21,8 +21,32 @@ export class SweetAlertService {
       icon: 'error',
       title: 'Oops... respuesta incorrecta',
       text: 'Volvamos a intentarlo :)',
-      footer: '<a href="">Why do I have this issue?</a>'
+      //footer: '<a href="">Why do I have this issue?</a>'
     })
+  }
+  ingresoUsuario(){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Bienvenido!',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
+  ingresoIncorrecto(){
+    Swal.fire({
+      icon: 'error',
+      title: 'Datos incorrectos!!!',
+      text: 'Compruebe si el correo y contraseña son correctos'
+    })
+  }
+  camposVacios(){
+    Swal.fire({
+      icon: 'error',
+      title: 'Campos vacios!',
+      text: 'Por favor rellene los campos con los datos correspondientes'
+    })
+
   }
 
 }

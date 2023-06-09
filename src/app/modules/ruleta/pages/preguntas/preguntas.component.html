@@ -1,12 +1,35 @@
 <app-navbar></app-navbar>
-<div class="contenedor" >
-  <h1 >{{ pregunta[numeroAleatorio].pregunta }}</h1>
+<div class="contenedor ">
 
-  <div class="preguntas d-flex flex-column mt-4" >
-    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[0].correcta)" type="button" class="p-2 btn btnPregunta">{{ pregunta[numeroAleatorio].respuesta[0].respuesta }}</button>
-    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[1].correcta)" type="button" class="p-2 btn btnPregunta mt-2">{{ pregunta[numeroAleatorio].respuesta[1].respuesta }}</button>
-    <button (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[2].correcta)" type="button" class="p-2 btn btnPregunta mt-2">{{ pregunta[numeroAleatorio].respuesta[2].respuesta }}</button>
+  <div class=" d-flex justify-content-center">
+    <h1 class="d-inline-flex p-2">{{ pregunta[numeroAleatorio].pregunta }}</h1>
+  </div>
+
+  <div class="preguntas d-flex flex-column mt-4">
+    <button
+      (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[0].correcta)"
+      type="button"
+      class="p-2 btn btnPregunta mt-4"
+      routerLink="/home"
+    >
+      {{ pregunta[numeroAleatorio].respuesta[0].respuesta }}
+    </button>
+    <button
+      (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[1].correcta)"
+      type="button"
+      class="p-2 btn btnPregunta mt-2"
+      routerLink="/home"
+    >
+      {{ pregunta[numeroAleatorio].respuesta[1].respuesta }}
+    </button>
+    <button
+      (click)="btnRespuesta(pregunta[numeroAleatorio].respuesta[2].correcta)"
+      type="button"
+      class="p-2 btn btnPregunta mt-2"
+      routerLink="/home"
+    >
+      {{ pregunta[numeroAleatorio].respuesta[2].respuesta }}
+    </button>
   </div>
   <!-- <h1>respuestas correctas: {{contador}}</h1> -->
-
 </div>
