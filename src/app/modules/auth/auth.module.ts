@@ -11,24 +11,26 @@ import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { RuletaModule } from "../ruleta/ruleta.module";
 
 
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    RegistroComponent,
-    HomePageComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    FormsModule,
-    AppRoutingModule ,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
-    ReactiveFormsModule, //agrego para bd
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-  ]
+    declarations: [
+        LoginComponent,
+        RegistroComponent,
+        HomePageComponent
+    ],
+    imports: [
+        CommonModule,
+        SharedModule,
+        FormsModule,
+        AppRoutingModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        AngularFireAuthModule,
+        ReactiveFormsModule,
+        provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+        RuletaModule
+    ]
 })
 export class AuthModule { }

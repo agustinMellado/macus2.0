@@ -11,6 +11,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   declarations: [
     PreguntasComponent,
     Ruleta6a12Component
+  ],exports:[
+   Ruleta6a12Component
   ],
   imports: [
     CommonModule,

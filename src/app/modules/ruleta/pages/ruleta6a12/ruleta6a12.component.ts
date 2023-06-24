@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-ruleta',
+  selector: 'app-ruleta6a12',
   templateUrl: './ruleta6a12.component.html',
   styleUrls: ['./ruleta6a12.component.css']
 })
