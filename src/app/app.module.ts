@@ -17,9 +17,10 @@ import { HomeModule } from './modules/home/home.module';
 import{AuthModule} from './modules/auth/auth.module';
 //importacion para poder hacer uso de las peticiones y consumir jsonserver
 import { HttpClientModule } from '@angular/common/http';
+import { RuletaComponent } from './ruleta/ruleta.component';
 
 @NgModule({
-  declarations: [AppComponent,
+  declarations: [AppComponent, RuletaComponent,
   ],
   imports: [
     BrowserModule,
