@@ -18,6 +18,9 @@ export class RuletaComponent implements OnInit {
   // Inicializo ctx como nulo
   ctx: CanvasRenderingContext2D | null = null; 
 
+  constructor(private router: Router) {
+    // Constructor de la clase
+  }
   ngOnInit() {
     this.drawRouletteWheel();
   }
@@ -200,20 +203,31 @@ export class RuletaComponent implements OnInit {
     this.ctx?.save();
     // Verifica si el contexto del lienzo existe
     if (this.ctx) {
-      // Establece la fuente y tamaño de la fuente para el texto
-      this.ctx.font = 'bold 30px Helvetica, Arial';
-      // Obtiene el texto de la opción seleccionada
-      const text = this.options[index];
-      // Dibujamos el texto en el centro de la ruleta
-      this.ctx.fillText(
-        text,
-        250 - this.ctx.measureText(text).width / 2,
-        250 + 10
-      );
-    }
-    // Restauramos el estado anterior del contexto del lienzo
-    this.ctx?.restore();
-  }
+          // Obtiene el texto de la opción seleccionada
+          const text = this.options[index];
+          // Redirige a diferentes componentes según la opción seleccionada
+          switch (text) {
+            case "Partes del cuerpo":
+              this.router.navigate(['otrocomponentecomponente']);
+              break;
+            case "Cuidado personal":
+              this.router.navigate(['otrocomponentecomponente']);
+              break;
+            case "Amistad y respeto":
+              this.router.navigate(['otrocomponentecomponente']);
+              break;
+            case "Seguridad":
+              this.router.navigate(['otrocomponentecomponente']);
+              break;
+            case "Amor":
+              this.router.navigate(['otrocomponentecomponente']);
+              break;
+            default:
+              break;
+          }
+        }
+      }
+   
   
   easeOut(t: number, b: number, c: number, d: number) {
     // Calculamos una función de interpolación para suavizar el giro de la ruleta
